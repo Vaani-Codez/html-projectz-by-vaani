@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Calculator</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; margin-top: 50px; }
+        input { width: 180px; height: 35px; font-size: 20px; text-align: right; margin-bottom: 10px; }
+        button { width: 40px; height: 40px; font-size: 18px; margin: 2px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h2>Calculator</h2>
+    <!-- Changed id to 'calc' -->
+    <input type="text" id="calc"><br>
+
+    <button onclick="calc.value += '1'">1</button>
+    <button onclick="calc.value += '2'">2</button>
+    <button onclick="calc.value += '3'">3</button>
+    <button onclick="calc.value += '+'">+</button><br>
+
+    <button onclick="calc.value += '4'">4</button>
+    <button onclick="calc.value += '5'">5</button>
+    <button onclick="calc.value += '6'">6</button>
+    <button onclick="calc.value += '-'">-</button><br>
+
+    <button onclick="calc.value += '7'">7</button>
+    <button onclick="calc.value += '8'">8</button>
+    <button onclick="calc.value += '9'">9</button>
+    <button onclick="calc.value += '*'">*</button><br>
+
+    <button onclick="calc.value = ''">C</button>
+    <button onclick="calc.value += '0'">0</button>
+    <button onclick="calc.value = eval(calc.value)">=</button>
+    <button onclick="calc.value += '/'">/</button>
+
+</body>
+</html>
